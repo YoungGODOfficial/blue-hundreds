@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>blue hundreds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-red: #e50914;
+      --dark-bg: #0d0d0d;
+      --white: #ffffff;
+      --font-primary: 'Rubik', sans-serif;
+      --font-alt: 'Orbitron', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--dark-bg);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1593360055563-0fef90e5f9c6?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1.5rem;
+    }
+
+    header h1 {
+      font-family: var(--font-alt);
+      font-size: 3rem;
+      color: var(--main-red);
+      text-shadow: 2px 2px 5px black;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    .btn {
+      background-color: var(--main-red);
+      border: none;
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      margin-top: 2rem;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #b1060f;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border: 1px solid #333;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: var(--main-red);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #555;
+      background: #111;
+      color: var(--white);
+    }
+
+    .contact button {
+      align-self: center;
+      width: fit-content;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>blue hundreds</h1>
+    <p>Where sacred jewelry meets psychedelic elevation. A journey through weed, mushrooms, and soul-crafted art.</p>
+    <a href="#pricing" class="btn">Explore the High</a>
+  </header>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2 style="text-align:center; margin-bottom:2rem; font-family: var(--font-alt);">Choose Your Vibe</h2>
+    <div class="pricing">
+      <div class="card">
+        <h3>Microdose Magic</h3>
+        <p>Starter set with handmade jewelry and gentle awakening kit.</p>
+        <strong>$49</strong>
+      </div>
+      <div class="card">
+        <h3>High Ritual</h3>
+        <p>Includes potent blends, mushroom-infused guides, and exclusive wearable art.</p>
+        <strong>$129</strong>
+      </div>
+      <div class="card">
+        <h3>Awakened Elite</h3>
+        <p>Full ritual collection, premium jewelry, and guided journeys for deep seekers.</p>
+        <strong>$249</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2 style="font-family: var(--font-alt); margin-bottom:1rem;">Contact Us</h2>
+    <p>Got questions, custom orders, or spiritual insights? Hit us up.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 blue hundreds. Stay lifted.
+  </footer>
+
+</body>
+</html>
